@@ -128,7 +128,9 @@ class CafeForm(FlaskForm):
 Built by **Yuvraj Jaiswal**  
 Powered by Flask and Bootstrap.
 
-# 📌 Quick Screenshot of App Flow (Optional Add-on)
+# 📌 Quick Screenshot of App Flow
 - Landing Page ➔ Add Cafe ➔ Cafes List
-
+![landing_page](./static/assets/screenshots/s1.png)
+![all_cafe_page](./static/assets/screenshots/s2.png)
+![add_cafe_form](./static/assets/screenshots/s3.png)
 # 🚀 THE END
