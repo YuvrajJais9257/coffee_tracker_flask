@@ -1,0 +1,72 @@
+<style>
+  .add-cafe-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+  }
+
+  .add-cafe-btn:hover {
+    background-color: #28a745;
+    color: #fff;
+  }
+
+  .add-cafe-btn svg {
+    margin-right: 8px;
+  }
+
+  table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th, td {
+    padding: 12px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #343a40;
+    color: #fff;
+  }
+
+  td {
+    background-color: #454d55;
+    color: #fff;
+  }
+
+  tr:hover {
+    background-color: #575d63;
+  }
+
+  .btn-outline-primary {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .btn-outline-primary i {
+    margin-right: 5px;
+  }
+
+  .table-responsive {
+    margin-top: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .add-cafe-btn {
+      width: 100%;
+      text-align: center;
+    }
+
+    table {
+      font-size: 14px;
+    }
+
+    th, td {
+      padding: 8px;
+    }
+  }
+</style>

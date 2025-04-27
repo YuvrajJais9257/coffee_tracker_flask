@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% block title %}Coffee and Wifi | CafeTracker{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1>☕️ Coffee & Wifi 💻</h1>
+      <p class="mb-4">Find the perfect cafe for your work or study session with our comprehensive database of cafes, complete with wifi, power, and coffee ratings.</p>
+      <div class="d-flex justify-content-center">
+        <a class="btn btn-secondary btn-lg me-3" href="{{ url_for('cafes') }}" role="button">
+          <i class="fas fa-coffee me-2"></i>Browse Cafes
+        </a>
+        <a class="btn btn-outline btn-lg" href="{{ url_for('add_cafe') }}" role="button">
+          <i class="fas fa-plus me-2"></i>Add New Cafe
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2>Why Use CafeTracker?</h2>
+      <p class="text-muted">Everything you need to find the perfect workspace</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 hover-lift">
+          <div class="card-body text-center">
+            <div class="mb-3">
+              <i class="fas fa-wifi fa-3x text-primary"></i>
+            </div>
+            <h3>Wifi Ratings</h3>
+            <p class="text-muted">Find cafes with fast and reliable wifi connections for your remote work needs.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 hover-lift">
+          <div class="card-body text-center">
+            <div class="mb-3">
+              <i class="fas fa-plug fa-3x text-primary"></i>
+            </div>
+            <h3>Power Availability</h3>
+            <p class="text-muted">Never worry about your laptop dying with our power outlet availability ratings.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 hover-lift">
+          <div class="card-body text-center">
+            <div class="mb-3">
+              <i class="fas fa-mug-hot fa-3x text-primary"></i>
+            </div>
+            <h3>Coffee Quality</h3>
+            <p class="text-muted">Because good coffee makes for better productivity. Find cafes with excellent brews.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2 class="mb-3">Ready to find your perfect cafe?</h2>
+        <p class="mb-4">Join our community of remote workers, students, and coffee enthusiasts to discover the best cafes in your area.</p>
+        <a href="{{ url_for('cafes') }}" class="btn btn-primary btn-lg">Explore All Cafes</a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
